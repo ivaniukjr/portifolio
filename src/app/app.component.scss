@@ -1,0 +1,317 @@
+.about-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    font-family: 'roboto';
+    padding: 12rem 2rem;
+
+    @media only screen and (max-width:768px){
+        padding: 7rem 3rem;
+    }
+
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        padding: 2% 4% 2% 8%;
+        align-items: flex-start;
+        justify-content: center;
+        color: #fff;
+        width: 55%;
+
+        h1{
+            font-size: 2rem;
+
+            strong{
+                color: aqua;
+                transition: .5s;
+            }
+            strong:hover{
+                opacity: .4;
+            }
+        }
+
+        span{
+            font-size: 1.2rem;
+            margin-bottom: 1%;
+
+            strong{
+                color: aqua;
+                font-weight: bold;
+            }
+
+            em{
+                color: #ff9100;
+            }
+        }
+
+        .span-description{
+            opacity: .5;
+            transition: .5s;
+        }
+
+        .span-description:hover{
+            opacity: 1;
+        }
+
+        .content{
+            content: '';
+            height: 3px;
+            width: 20rem;
+            background-color: aqua;
+            margin: 1rem 0;
+        }
+        .find-me{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: .5rem;
+            padding: .5rem 0;
+
+
+            @media only screen and (max-width:630px ){
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .find-me-span{
+                width: 8rem;
+            }
+
+            .social-media{
+                display: flex;
+                flex-direction: row;
+
+                @media only screen and (max-width:630px){
+                    margin: .5rem 0;
+                } 
+            }
+
+            span{
+                margin-right: .4rem;
+                font-size: 1rem;
+
+            }
+            img{
+                width: 1.4rem;
+                margin-right: .6rem;
+                transition: .5s;
+            }
+
+            img:hover{
+                opacity: .6;
+            }
+            .linkedin{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                padding: .3rem 0 .3rem .7rem;
+                background-color: #006eff;
+                text-decoration: none;
+                color: #fff;
+                border-radius: 20px;
+                width: 7rem;
+                transition: .5s ease;
+
+                @media only screen and (max-width: 630px){
+                    width: 10rem;
+                }
+            }
+
+            .linkedin:hover{
+                width: 10rem;
+
+            }
+        }
+
+    }
+
+    .about-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+
+        @media only screen and (max-width: 992px){
+            display: none !important;
+        }
+
+        img{
+            width: 40%;
+            opacity: .6;
+            z-index: 0;
+            transition: .5s;
+        }
+
+        img:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.experiences{
+    width: 100%;
+    height: auto;
+    background-color: #02000f;
+    font-family: 'roboto';
+    color: #fff;
+
+    .experiences-container{
+        padding: 5% 10% 3% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: 992px){
+            padding: 8% 10% 3% 10%;
+        }
+    }
+
+    h3{
+        color: #006eff;
+        transition: .5s;
+        margin-bottom: .5rem;
+    }
+
+    h3:hover{
+        opacity: .7;
+
+
+ 
+    }
+
+    .content{
+        content: '';
+        height: .2rem;
+        background-color: aqua;
+        width: 0rem;
+        margin: 1rem 0;
+        transition: .5s ease-in-out;
+    }
+
+    .experiences-container:hover{
+        .content{
+            width: 10rem;
+        }
+    }
+
+    .experiences-content{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+
+        i{
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        i:hover{
+            color: #ff9100;
+            opacity: .8;
+        }
+
+        span{
+            transition: .5s;
+            margin: 0 0 .5rem .5rem;
+        }
+
+
+    }
+
+ 
+
+
+}
+
+
+.competencias {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .title-competencias {
+    color: #fff;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h2{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+  }
+  
+  .container-competencias {
+    flex: 1;
+    display: flex;
+    font-family: 'roboto';
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    overflow: auto;
+  }
+  
+  .grid-competencias {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2.8em;
+
+    @media only screen and (max-width:1170px){
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media only screen and (max-width:985px){
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media only screen and (max-width:850px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+    @media only screen and (max-width:640px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width:390px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+  }
+  
+    .image-competencias {
+        position: relative;
+        img{
+            cursor: pointer;
+            width: 9em;
+            transition: .7s;
+            filter: grayscale(100%)
+        }
+      }
+
+      
+    
+    .image-competencias:hover{
+        img{
+        filter: grayscale(0);
+
+
+        }
+
+        
+    }
+   
+    @media only screen and (max-width:768px){
+        .image-competencias{
+            img{
+                filter: grayscale(0);
+            }
+        }
+    }

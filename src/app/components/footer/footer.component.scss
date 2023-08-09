@@ -1,0 +1,120 @@
+footer{
+    height: 22vh;
+    margin-top: 8rem;
+    background-color: #02000f;
+    font-family: 'roboto';
+
+    
+    @media only screen and (max-width:915px){
+        height: auto;
+
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100%;
+    overflow-y: hidden;
+
+
+        @media only screen and (max-width:915px){
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 3% 0 4% 9%;
+        }
+
+
+        .footer-content{
+            width: 15%;
+            height: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            color: #fff;
+            padding: 3% 1% 4% 7%;
+            transition: .5s;
+
+            @media only screen and (max-width:915px){
+                padding: 2% 1% 4% 0%;
+                width: 50%;
+            }
+
+            .logo{
+                width:8rem;
+                margin-bottom: 1.6rem;
+                cursor: pointer;
+                transition: .4s;
+            }
+
+            .logo:hover{
+                opacity: .6;
+            }
+
+            span{
+                font-size: 1rem;
+            }
+
+            .social-media{
+                display: flex;
+                flex-direction: row;
+
+                img{
+                    width: 1.4rem;
+                    margin-right: .8rem;
+                    transition: .3s;
+                }
+
+                img:hover{
+                    opacity: .6;
+                }
+
+                @media only screen and (max-width:630px){
+                    margin: .5rem 0;
+                } 
+            }
+        }
+        
+
+
+        .snd-footer-content{
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            color: #fff;
+            padding: 2.5rem 1rem 4rem 6rem;
+            transition: .9s;
+
+            @media only screen and (max-width:915px){
+                padding: 1rem 1rem 2rem 0rem;
+                width: 80%;
+            }
+        }
+
+        .content{
+            content: '';
+            height: .2rem;
+            background-color: aqua;
+            width: 10rem;
+            margin: 1rem 0;
+            transition: .5s ease-in-out;
+        }
+
+        .snd-footer-content:hover{
+            color: #ff9100;
+            opacity: .7;
+
+            .content{
+                width: 17rem;
+            }
+        }
+
+        .snd-footer-content:nth-child(1){
+            margin-bottom: 1rem;
+        }
+    }
+
+}
